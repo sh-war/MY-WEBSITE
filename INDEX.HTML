@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MY WEBSITE</title> 
+        <link rel="stylesheet"  href="style1.css"> 
+        <meta name="viewport"  content="with=device-width, initial-scale=1.0"/>
+
+        <link rel="preconnect " href="https://fonts.gstatic.com">
+        <link rel="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+        <nav>
+            <a href="index.html"><img src ="10.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="icoNs" onclick="hideMenu()"></i>
+                                <ul>
+                    <li><a href="INDEX.HTML">HOME</a></li>
+                    <li><a href="About Us.HTML">ABOUT US</a></li>
+                    <li><a href="SERVICES.HTML">SERVICES</a></li>
+                    <li><a href="BLOGS.HTML">BLOGS</a></li>
+                    <li><a href="CONTACT.HTML">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="icoNs" onclick="showMenu()"></i>    
+                    </nav>
+        <div class="text-box">
+            <h1>World's best developers.</h1>
+            <p>The best developers in the land, we are second to none.<br>Come get website of your dream</p>
+            <a href="CONTACT.HTML" class="hero-btn">Contact Us</a>
+        </div>
+        </section >
+        <!--Websites-->
+        <section class="websites">
+            <h1>Websites developed</h1>
+            <p>Link with our best developers</p>
+<div class="row">
+    <div class="websites-col">
+        <h3>Dynamic</h3>
+        <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+    </div>
+<div class="websites-col">
+    <h3>Interactive</h3>
+    <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+</div>
+<div class="websites-col">
+    <h3>Intermediate</h3>
+    <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+</div>
+</div>
+        </section>
+        <section class="headquarter">
+            <h1>Our Global headquarters</h1>
+            <p>Located in Nairobi-Kenya</p>
+            <div class="row">
+            <div class="headquarter-col">
+                <img src="image1.jpg">
+                <div class="Layer">
+                <h3>NAIROBI</h3>
+            </div>
+            </div>
+            
+            <div class="headquarter-col">
+                <img src="16.jpg">
+                <div class="Layer">
+                <h3>MOMBASA</h3>
+            </div>
+            </div>
+        
+            <div class="headquarter-col">
+                <img src="85.jpg">
+                <div class="Layer">
+                <h3>NAKURU</h3>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!--Facilities-->
+        <section class="facilities">
+            <h1>Our branches</h1>
+            <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+<div class="row">
+    <div class="facilities-col">
+        <img src="st.jpg">
+        <h3>World class library</h3>
+        <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+    </div>
+    <div class="facilities-col">
+        <img src="image6.jpg">
+        <h3>World class library</h3>
+        <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+    </div>
+    <div class="facilities-col">
+        <img src="image5.jpg">
+        <h3>World class library</h3>
+        <p>Best interactive sites satisfying clients.Easy for customers to navigate</p>
+</div>
+</div>
+        </section>
+        <section class="testimonials">
+            <h1>What Our Clients Says</h1>
+            <p>The best in the land.</p>
+            <div class="row">
+                <div class="testimonials-col">
+                    <img src="u2.jpg">
+                <div>
+                    <p>This is the best platform to bet on.<br> Never dissapoints.<br>Quality work.</p>
+                    <h3>Christy.</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+                        <div class="testimonials-col">
+                            <img src="u2.jpg">
+                            <div>
+                            <p>This is the best platform to bet on.<br> Never dissapoints.<br>Quality work.</p>
+                            <h3>Essy Miles.</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    </div>
+        </section>
+        <section>
+
+<section class="cta">
+    <h1>Inquire  About Our Various Programmes From Anywhere.</h1>
+    <a href="CONTACT.HTML" class="hero-btn">CONTACT US</a>
+        </section>
+        <section class="footer">
+<h4>About Us</h4>
+<p>Get to know more About us</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-reddit"></i>
+</div>
+<p>Made with <i class="fa fa-heart-o"> </i> by DonTech</p>
+        </section>
+<!---Javascript for toggle menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+     navLinks.style.right="-200px";
+     
+    }
+
+</script>
+ 
+    </body>
+</html>
