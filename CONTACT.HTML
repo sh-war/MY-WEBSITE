@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MY WEBSITE</title> 
+        <link rel="stylesheet"  href="style1.css">  
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0"/>
+ 
+        <link rel="preconnect " href="https://fonts.gstatic.com">
+        <link rel="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src ="10.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="icoNs" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="INDEX.HTML">HOME</a></li>
+                    <li><a href="About Us.HTML">ABOUT US</a></li>
+                    <li><a href="SERVICES.HTML">SERVICES</a></li>
+                    <li><a href="BLOGS.HTML">BLOGS</a></li>
+                    <li><a href="CONTACT.HTML">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="icoNs" onclick="showMenu()"></i>    
+
+        </nav>
+        <h1>CONTACT US</h1>
+        </section>
+        <!--CONTACT US-->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31899.460154270444!2d39.65832938669752!3d-4.068727995096612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184012bd0f5ed72d%3A0x182083187b029381!2sTechnical%20University%20of%20Mombasa!5e0!3m2!1sen!2ske!4v1678531927398!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+   </section>
+   <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Tom Mboya Road, Technical University.</h5>
+                <p>Technical University Of Mombasa</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+254 700584878</h5>
+                <p>Sunday to Sunday 24/7</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@dontech.com</h5>
+                <p>Reach Us via Email for queries.</p>
+                </span>
+            </div>
+                <form action="form_handler" method="post">
+                    <input type="text"  name="name" placeholder="Enter your name"required>
+                    <input type="email"  name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+   </section>
+        </section>
+        <section class="footer">
+<h4>About Us</h4>
+<p>Get to know more About us</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-reddit"></i>
+</div>
+<p>Made with <i class="fa fa-heart-o"> </i> by DonTech</p>
+        </section>
+
+<!---Javascript for toggle menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+     navLinks.style.right="0"
+    }
+    function hideMenu(){
+     navLinks.style.right="-200px";
+    }
+
+</script>
+ 
+    </body>
+</html>
