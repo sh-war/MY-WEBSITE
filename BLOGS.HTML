@@ -58,7 +58,10 @@ helps one to think like a compiler and a debugger.
 
                         <div class="comment-box">
                             <h3>Leave a comment</h3>
-                            <form class="comment-form">
+                            <form class="comment-form" data-netlify="true">
+                                <input type="hidden" name="subject" 
+                                value="New lead from %{formName} (%{submissionId})" />
+                              
                                 <input type="text" placeholder="Enter Name">
                                 <input type="email" placeholder="Enter Email">
                                 <textarea rows="5" placeholder="Your comment"></textarea>
