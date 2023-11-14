@@ -81,7 +81,7 @@
                     <input type="email"  name="email" placeholder="Enter your email address" required>
                     <input type="text" name="subject" placeholder="Enter your subject" required>
                     <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn">Send Message</button>
+                    <button type="submit" class="hero-btn" id="submitButton">Send Message</button>
                 </form>
             </div>
         </div>
@@ -110,6 +110,26 @@
     function hideMenu(){
      navLinks.style.right="-200px";
     }
+
+    const submitButton = document.getElementById("submitButton");
+        let lastSubmitTime = 0;
+        const timeInterval = 60000; // 1 minute in milliseconds
+        const maxRequestsPerInterval = 2;
+
+        submitButton.addEventListener("click", () => {
+            const currentTime = new Date().getTime();
+
+            // Check if the time since the last submission is within the allowed interval
+            if (currentTime - lastSubmitTime < timeInterval) {
+                alert("Too many requests. Please try again later.");
+            } else {
+                // Process the form submission
+                alert("Form submitted successfully!");
+
+                // Update the last submission time
+                lastSubmitTime = currentTime;
+            }
+        });
 
 </script>
  
