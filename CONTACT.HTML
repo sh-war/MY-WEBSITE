@@ -73,7 +73,7 @@
                 <p>Reach Us via Email for queries.</p>
                 </span>
             </div>
-                <form action="form_handler" method="post" data-netlify="true">
+                <form action="form_handler" method="post" data-netlify="true"   data-netlify-recaptcha="true">
                     <input type="hidden" name="subject" 
                     value="New lead from `%{formName} (%{submissionId})`"/>
                   
@@ -81,6 +81,7 @@
                     <input type="email"  name="email" placeholder="Enter your email address" required>
                     <input type="text" name="subject" placeholder="Enter your subject" required>
                     <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <button type="submit" class="hero-btn" id="submitButton">Send Message</button>
                 </form>
             </div>
